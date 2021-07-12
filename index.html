@@ -26,11 +26,6 @@
             color: blue;
         }
 
-        .player>img {
-            width: 20%;
-
-        }
-
         .top-player {
 
             display: grid;
@@ -38,9 +33,14 @@
             grid-gap: 20px;
             padding-bottom: 20px;
 
+        }
 
+
+        .player>.photo>img {
+            width: 30%;
 
         }
+
 
         .player {
 
@@ -55,10 +55,26 @@
 
         }
 
-        .player>img,
-        .player>p {
-            margin: 5px;
+        .photo {
+            width: 50%;
+
+
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 5px;
         }
+
+        .name {
+            width: 50%;
+            margin-left: 5px;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+
+
 
         /* top blog */
 
@@ -81,25 +97,61 @@
 
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
-        .blogs>img {
-            width: 25%;
+        .blog-photo {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 5px;
+
         }
 
-        .blog-details,
-        .blogs>img {
-            margin: 5px;
+        .blog-details {
+            width: 50%;
+            display: flex;
+            flex-flow: column;
+
+
+            justify-content: center;
+
+
+            margin-left: 5px;
+
+            font-size: 20px;
+
+
+
         }
+
+
+
+        .blogs>.blog-photo>img {
+            width: 50%;
+
+        }
+
+        .blog-details h5 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
 
         .blog-details>p {
             color: gray;
+            margin: 0;
+            padding: 0;
+
 
         }
     </style>
 </head>
 
 <body>
+
+    <!-- header start -->
 
     <header class="menu-container">
         <nav class="menu">
@@ -127,6 +179,8 @@
 
     </header>
 
+    <!-- header end -->
+
 
     <div class="top">
 
@@ -135,28 +189,59 @@
 
             <div class="top-player">
                 <div class="player">
-                    <img src="images/players/player-1.png" alt="">
-                    <p>John Smith</p>
+
+                    <div class="photo">
+                        <img src="images/players/player-1.png" alt="">
+
+                    </div>
+                    <div class="name">
+                        <p>John Smith</p>
+
+                    </div>
+
+
+                </div>
+
+                <div class="player">
+                    <div class="photo"><img src="images/players/player-2.png" alt=""></div>
+
+                    <div class="name">
+                        <p>Pro Rasel</p>
+                    </div>
+
                 </div>
                 <div class="player">
-                    <img src="images/players/player-2.png" alt="">
-                    <p>Pro Rasel</p>
+                    <div class="photo"><img src="images/players/player-3.png" alt=""></div>
+                    <div class="name">
+                        <p>Abu Sufian</p>
+                    </div>
+
                 </div>
                 <div class="player">
-                    <img src="images/players/player-3.png" alt="">
-                    <p>Abu Sufian</p>
+
+                    <div class="photo"><img src="images/players/player-4.png" alt=""></div>
+
+                    <div class="name">
+                        <p>Shajedul Karim</p>
+                    </div>
+
                 </div>
                 <div class="player">
-                    <img src="images/players/player-4.png" alt="">
-                    <p>Shajedul Karim</p>
+                    <div class="photo"><img src="images/players/player-5.png" alt=""></div>
+
+                    <div class="name">
+                        <p>Maruf Ahmed</p>
+                    </div>
+
                 </div>
                 <div class="player">
-                    <img src="images/players/player-5.png" alt="">
-                    <p>Maruf Ahmed</p>
-                </div>
-                <div class="player">
-                    <img src="images/players/player-6.png" alt="">
-                    <p>Mujahid</p>
+                    <div class="photo"><img src="images/players/player-6.png" alt=""></div>
+
+                    <div class="name">
+                        <p>Mujahid</p>
+                    </div>
+
+
                 </div>
 
             </div>
@@ -173,9 +258,12 @@
             <div class="top-blogs">
 
                 <div class="blogs">
-                    <img src="images/blogs/blog-1.png" alt="">
+
+                    <div class="blog-photo"><img src="images/blogs/blog-1.png" alt=""></div>
+
 
                     <div class="blog-details">
+
                         <h5>13 of My Favorite
 
                             UI/UX Goodies</h5>
@@ -184,7 +272,9 @@
 
                 </div>
                 <div class="blogs">
-                    <img src="images/blogs/blog-2.png" alt="">
+
+                    <div class="blog-photo"><img src="images/blogs/blog-2.png" alt=""></div>
+
 
                     <div class="blog-details">
                         <h5>7 typography tips
@@ -196,7 +286,9 @@
 
                 </div>
                 <div class="blogs">
-                    <img src="images/blogs/blog-3.png" alt="">
+
+                    <div class="blog-photo"><img src="images/blogs/blog-3.png" alt=""></div>
+
                     <div class="blog-details">
 
                         <h5>UI cheat sheet:
@@ -208,7 +300,8 @@
 
                 </div>
                 <div class="blogs">
-                    <img src="images/blogs/blog-4.png" alt="">
+                    <div class="blog-photo"><img src="images/blogs/blog-4.png" alt=""></div>
+
 
                     <div class="blog-details">
                         <h5>Your logo is

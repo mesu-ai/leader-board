@@ -1,0 +1,41 @@
+
+/* nav header */
+
+.menu {
+
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+
+    background-color: blue;
+
+
+}
+
+
+.left-nav,
+.right-nav {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.left-nav>a,
+.left-nav>h3 {
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    font-weight: 700;
+
+}
+
+.right-nav>a {
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    font-weight: 700;
+
+}

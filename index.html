@@ -5,10 +5,234 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Leader Board</title>
+
+
+    <style>
+        /* top player */
+        .top {
+            background-color: darkkhaki;
+
+        }
+
+        .player-container {
+
+
+            margin: 0 20px;
+        }
+
+        #span-1 {
+            color: blue;
+        }
+
+        .player>img {
+            width: 20%;
+
+        }
+
+        .top-player {
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding-bottom: 20px;
+
+
+
+        }
+
+        .player {
+
+            border: 2px solid red;
+            border-radius: 10px;
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .player>img,
+        .player>p {
+            margin: 5px;
+        }
+
+        /* top blog */
+
+        .blog-container {
+            margin: 0 20px;
+
+        }
+
+        .top-blogs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+
+        }
+
+        .blogs {
+
+            border: 2px solid blueviolet;
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .blogs>img {
+            width: 25%;
+        }
+
+        .blog-details,
+        .blogs>img {
+            margin: 5px;
+        }
+
+        .blog-details>p {
+            color: gray;
+
+        }
+    </style>
 </head>
 
 <body>
+
+    <header class="menu-container">
+        <nav class="menu">
+
+
+            <div class="left-nav">
+                <a href=""><img src="images/icons/logo.png" alt="" width="30px"> </a>
+                <h3>Idea</h3>
+
+            </div>
+
+
+
+
+            <div class="right-nav">
+
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Works</a>
+                <a href=""><img src="images/icons/profile.png" alt="profile" width="60%"></a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <div class="top">
+
+        <section class="player-container">
+            <h3> <span id="span-1">Top Player</span> </h3>
+
+            <div class="top-player">
+                <div class="player">
+                    <img src="images/players/player-1.png" alt="">
+                    <p>John Smith</p>
+                </div>
+                <div class="player">
+                    <img src="images/players/player-2.png" alt="">
+                    <p>Pro Rasel</p>
+                </div>
+                <div class="player">
+                    <img src="images/players/player-3.png" alt="">
+                    <p>Abu Sufian</p>
+                </div>
+                <div class="player">
+                    <img src="images/players/player-4.png" alt="">
+                    <p>Shajedul Karim</p>
+                </div>
+                <div class="player">
+                    <img src="images/players/player-5.png" alt="">
+                    <p>Maruf Ahmed</p>
+                </div>
+                <div class="player">
+                    <img src="images/players/player-6.png" alt="">
+                    <p>Mujahid</p>
+                </div>
+
+            </div>
+            <hr>
+
+
+        </section>
+
+
+        <section class="blog-container">
+
+            <h3> <span id="span-1"> Top Blog</span></h3>
+
+            <div class="top-blogs">
+
+                <div class="blogs">
+                    <img src="images/blogs/blog-1.png" alt="">
+
+                    <div class="blog-details">
+                        <h5>13 of My Favorite
+
+                            UI/UX Goodies</h5>
+                        <p>By <span id="span-1">Danny Sapio</span> </p>
+                    </div>
+
+                </div>
+                <div class="blogs">
+                    <img src="images/blogs/blog-2.png" alt="">
+
+                    <div class="blog-details">
+                        <h5>7 typography tips
+
+                            for interface design</h5>
+                        <p>By <span id="span-1">Jeremiah Lam</span> </p>
+
+                    </div>
+
+                </div>
+                <div class="blogs">
+                    <img src="images/blogs/blog-3.png" alt="">
+                    <div class="blog-details">
+
+                        <h5>UI cheat sheet:
+
+                            list vs grids</h5>
+                        <p>By <span id="span-1">Tess Gadd</span> </p>
+
+                    </div>
+
+                </div>
+                <div class="blogs">
+                    <img src="images/blogs/blog-4.png" alt="">
+
+                    <div class="blog-details">
+                        <h5>Your logo is
+
+                            copied</h5>
+                        <p>By <span id="span-1">Ferdinand Vogler</span> </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
 
 </body>
 

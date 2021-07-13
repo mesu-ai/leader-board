@@ -153,7 +153,7 @@ h3{
     border-radius: 10px;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-flow:wrap row;
     justify-content:flex-start;
 
     
@@ -165,6 +165,7 @@ h3{
 
 .photo {
     display: flex;
+    flex-flow: wrap row;
     align-items: center;
     justify-content: flex-start;
 }
@@ -180,6 +181,7 @@ h3{
     
     margin-left: 16px;
     display: flex;
+    flex-flow: wrap row;
     align-items: center;
 
     justify-content:flex-start;
@@ -400,14 +402,25 @@ h3{
 }
 
 
-/*---------------------
-      Media Quary
-------------------------*/
+/*---------------------------------------
+ *************** Media Quary ************
+-----------------------------------------*/
 
-@media only screen and (max-width:688px) {
+
+
+/*-----------------------------------
+         tablet/ipad device
+------------------------------------ */
+
+
+@media only screen and (max-width:992px) {
+
+
+    /*---------- common design-------- */
 
     h3{
         text-align: center;
+        
     }
 
     .menu-container,.top-container,.course-container{
@@ -415,6 +428,116 @@ h3{
         width: 100%;
         height: 100%;
     }
+
+    .top-player,.top-blogs{
+        
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    
+
+    /*-------------- menu design----------- */
+
+    .menu-container {
+        
+        display: flex;
+        justify-content: space-around;
+       
+        background-color: green;
+        flex-flow: wrap row;
+    }
+
+    /*-------- player/course design-------- */
+
+    .player{
+        background-color: rgb(221, 241, 221);
+          
+        display: flex;
+        flex-flow: wrap column;
+        
+        align-items: center;
+    
+        }
+
+     /*-------- blog/article design-------- */
+
+     .article{
+        display: flex;
+        background-color: rgba(255, 105, 180, 0.274);
+    }
+
+
+    /*-------- course design-------- */
+
+    .courses{
+        background-color: rgb(221, 241, 221);
+          
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-around;
+
+        align-items: center;
+    
+        }
+
+
+    .courses{
+        
+        padding-top: 30px;
+    }
+
+    .course{
+        margin-bottom: 30px;
+        background-color:orangered;
+
+    }
+
+    .author p{
+        color: white;
+    }
+
+
+    
+}
+
+
+
+/*-----------------------------------
+            mobile device
+----------------------------------- */
+
+
+@media only screen and (max-width:688px) {
+
+
+    /*---------- common design-------- */
+
+    h3{
+        text-align: center;
+        
+    }
+
+    .menu-container,.top-container,.course-container{
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .top-player,.top-blogs{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .player,.courses{
+        background-color: rgb(221, 241, 221);
+          
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        }
+
+    /*-------------- menu design----------- */
 
     .menu-container {
         
@@ -426,35 +549,43 @@ h3{
         flex-wrap: wrap;
     }
 
-   
-    .top-player,.top-blogs{
-        
-        grid-template-columns: repeat(1,1fr);
-    }
+    /*-------- player/course design-------- */
 
-    .player,.courses{
-      
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+     /*-------- blog/article design-------- */
 
-    }
-
-    .article{
+     .article{
         display: flex;
+        background-color: rgba(255, 105, 180, 0.274);
+    }
+
+
+    /*-------- course design-------- */
+
+
+    .courses{
+        
+        padding-top: 30px;
     }
 
     .course{
         margin-bottom: 30px;
         background-color:orangered;
 
-
     }
 
     .author p{
         color: white;
     }
+
+
     
 }
+
+
+
+/*--------------------------------   
+             design
+        *** The End ***
+---------------------------------- */
 
 

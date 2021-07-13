@@ -5,147 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awasome -->
+    <script src="https://kit.fontawesome.com/e15939fd59.js" crossorigin="anonymous"></script>
+
+    <!-- style sheet -->
     <link rel="stylesheet" href="style.css">
     <title>Leader Board</title>
 
 
     <style>
-        /* top player */
-        .top {
-            background-color: darkkhaki;
 
-        }
-
-        .player-container {
-
-
-            margin: 0 20px;
-        }
-
-        #span-1 {
-            color: blue;
-        }
-
-        .top-player {
-
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-            padding-bottom: 20px;
-
-        }
-
-
-        .player>.photo>img {
-            width: 30%;
-
-        }
-
-
-        .player {
-
-            border: 2px solid red;
-            border-radius: 10px;
-
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-
-        }
-
-        .photo {
-            width: 50%;
-
-
-
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            margin-right: 5px;
-        }
-
-        .name {
-            width: 50%;
-            margin-left: 5px;
-            justify-content: flex-start;
-            align-items: center;
-
-        }
-
-
-
-        /* top blog */
-
-        .blog-container {
-            margin: 0 20px;
-
-        }
-
-        .top-blogs {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px;
-
-        }
-
-        .blogs {
-
-            border: 2px solid blueviolet;
-            border-radius: 10px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .blog-photo {
-            width: 50%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            margin-right: 5px;
-
-        }
-
-        .blog-details {
-            width: 50%;
-            display: flex;
-            flex-flow: column;
-
-
-            justify-content: center;
-
-
-            margin-left: 5px;
-
-            font-size: 20px;
-
-
-
-        }
-
-
-
-        .blogs>.blog-photo>img {
-            width: 50%;
-
-        }
-
-        .blog-details h5 {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-
-
-        .blog-details>p {
-            color: gray;
-            margin: 0;
-            padding: 0;
-
-
-        }
     </style>
 </head>
 
@@ -181,142 +50,295 @@
 
     <!-- header end -->
 
+    <section class="container">
 
-    <div class="top">
+        <div class="top-container">
 
-        <section class="player-container">
-            <h3> <span id="span-1">Top Player</span> </h3>
 
-            <div class="top-player">
-                <div class="player">
 
-                    <div class="photo">
-                        <img src="images/players/player-1.png" alt="">
+            <section class="player-container">
+                <h3> <span id="span-1">Top Player</span> </h3>
+
+
+                <div class="top-player">
+
+                    <div class="player">
+
+                        <div class="photo">
+                            <img src="images/players/player-1.png" alt="">
+
+                        </div>
+                        <div class="name">
+                            <p>John Smith</p>
+
+                        </div>
+
 
                     </div>
-                    <div class="name">
-                        <p>John Smith</p>
+                    <div class="player">
+                        <div class="photo"><img src="images/players/player-2.png" alt=""></div>
+
+                        <div class="name">
+                            <p>Pro Rasel</p>
+                        </div>
 
                     </div>
+                    <div class="player">
+                        <div class="photo"><img src="images/players/player-3.png" alt=""></div>
+                        <div class="name">
+                            <p>Abu Sufian</p>
+                        </div>
 
+                    </div>
+                    <div class="player">
+
+                        <div class="photo"><img src="images/players/player-4.png" alt=""></div>
+
+                        <div class="name">
+                            <p>Shajedul Karim</p>
+                        </div>
+
+                    </div>
+                    <div class="player">
+                        <div class="photo"><img src="images/players/player-5.png" alt=""></div>
+
+                        <div class="name">
+                            <p>Maruf Ahmed</p>
+                        </div>
+
+                    </div>
+                    <div class="player">
+                        <div class="photo"><img src="images/players/player-6.png" alt=""></div>
+
+                        <div class="name">
+                            <p>Mujahid</p>
+                        </div>
+
+
+                    </div>
 
                 </div>
 
-                <div class="player">
-                    <div class="photo"><img src="images/players/player-2.png" alt=""></div>
+            </section>
 
-                    <div class="name">
-                        <p>Pro Rasel</p>
-                    </div>
-
-                </div>
-                <div class="player">
-                    <div class="photo"><img src="images/players/player-3.png" alt=""></div>
-                    <div class="name">
-                        <p>Abu Sufian</p>
-                    </div>
-
-                </div>
-                <div class="player">
-
-                    <div class="photo"><img src="images/players/player-4.png" alt=""></div>
-
-                    <div class="name">
-                        <p>Shajedul Karim</p>
-                    </div>
-
-                </div>
-                <div class="player">
-                    <div class="photo"><img src="images/players/player-5.png" alt=""></div>
-
-                    <div class="name">
-                        <p>Maruf Ahmed</p>
-                    </div>
-
-                </div>
-                <div class="player">
-                    <div class="photo"><img src="images/players/player-6.png" alt=""></div>
-
-                    <div class="name">
-                        <p>Mujahid</p>
-                    </div>
-
-
-                </div>
-
-            </div>
             <hr>
 
+            <section class="blog-container">
 
-        </section>
+                <h3> <span id="span-1"> Top Blog</span></h3>
 
+                <div class="top-blogs">
 
-        <section class="blog-container">
+                    <div class="article">
 
-            <h3> <span id="span-1"> Top Blog</span></h3>
-
-            <div class="top-blogs">
-
-                <div class="blogs">
-
-                    <div class="blog-photo"><img src="images/blogs/blog-1.png" alt=""></div>
+                        <div class="blog-photo">
+                            <img src="images/blogs/blog-1.png" alt="">
+                        </div>
 
 
-                    <div class="blog-details">
+                        <div class="blog-details">
 
-                        <h5>13 of My Favorite
+                            <h5>13 of My Favorite
 
-                            UI/UX Goodies</h5>
-                        <p>By <span id="span-1">Danny Sapio</span> </p>
-                    </div>
-
-                </div>
-                <div class="blogs">
-
-                    <div class="blog-photo"><img src="images/blogs/blog-2.png" alt=""></div>
-
-
-                    <div class="blog-details">
-                        <h5>7 typography tips
-
-                            for interface design</h5>
-                        <p>By <span id="span-1">Jeremiah Lam</span> </p>
+                                UI/UX Goodies</h5>
+                            <p>By <span id="span-1">Danny Sapio</span> </p>
+                        </div>
 
                     </div>
+                    <div class="article">
 
+                        <div class="blog-photo"><img src="images/blogs/blog-2.png" alt=""></div>
+
+
+                        <div class="blog-details">
+                            <h5>7 typography tips
+
+                                for interface design</h5>
+                            <p>By <span id="span-1">Jeremiah Lam</span> </p>
+
+                        </div>
+
+                    </div>
+                    <div class="article">
+
+                        <div class="blog-photo"><img src="images/blogs/blog-3.png" alt=""></div>
+
+                        <div class="blog-details">
+
+                            <h5>UI cheat sheet:
+
+                                list vs grids</h5>
+                            <p>By <span id="span-1">Tess Gadd</span> </p>
+
+                        </div>
+
+                    </div>
+                    <div class="article">
+                        <div class="blog-photo"><img src="images/blogs/blog-4.png" alt=""></div>
+
+
+                        <div class="blog-details">
+                            <h5>Your logo is
+
+                                copied</h5>
+                            <p>By <span id="span-1">Ferdinand Vogler</span> </p>
+
+                        </div>
+
+                    </div>
                 </div>
-                <div class="blogs">
 
-                    <div class="blog-photo"><img src="images/blogs/blog-3.png" alt=""></div>
+            </section>
 
-                    <div class="blog-details">
+        </div>
 
-                        <h5>UI cheat sheet:
 
-                            list vs grids</h5>
-                        <p>By <span id="span-1">Tess Gadd</span> </p>
+        <div class="course-container">
+
+            <section class="latest-container">
+                <h3> <span id="span-1">Latest Course</span> </h3>
+
+                <div class="courses">
+                    <div class="course">
+                        <div class="banner">
+                            <img src="images/courses/course-1.png" alt="">
+
+                        </div>
+
+                        <div class="course-details">
+                            <div class="title">
+                                <h5>React - The Complete Guide 2020</h5>
+
+                            </div>
+                            <div class="author">
+                                <p>Reed Krakoff</p>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="course-info">
+                            <div class="rating">
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star empty"></i>
+
+
+                            </div>
+
+                            <div class="count">
+                                <p>4.5</p>
+                            </div>
+                            <div class="time">
+                                <i class="far fa-clock"> 01:30 hr</i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="course">
+                        <div class="banner">
+                            <img src="images/courses/course-2.png" alt="">
+
+                        </div>
+
+                        <div class="course-details">
+
+                            <div class="title">
+                                <h5>React - The Complete Guide 2020</h5>
+                            </div>
+
+                            <div class="author">
+                                <p>Reed Krakoff</p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="course-info">
+                            <div class="rating">
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star empty"></i>
+
+
+                            </div>
+
+                            <div class="count">
+                                <p>4.5</p>
+                            </div>
+                            <div class="time">
+                                <i class="far fa-clock"> 01:30 hr</i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="course">
+                        <div class="banner">
+                            <img src="images/courses/course-3.png" alt="">
+
+                        </div>
+
+                        <div class="course-details">
+
+                            <div class="title">
+                                <h5>The Javascript Course 2020</h5>
+                            </div>
+
+                            <div class="author">
+                                <p>Reed Krakoff</p>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="course-info">
+                            <div class="rating">
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star empty"></i>
+
+
+                            </div>
+
+                            <div class="count">
+                                <p>4.5</p>
+                            </div>
+                            <div class="time">
+                                <i class="far fa-clock"> 01:30 hr</i>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                </div>
-                <div class="blogs">
-                    <div class="blog-photo"><img src="images/blogs/blog-4.png" alt=""></div>
 
-
-                    <div class="blog-details">
-                        <h5>Your logo is
-
-                            copied</h5>
-                        <p>By <span id="span-1">Ferdinand Vogler</span> </p>
-
-                    </div>
 
                 </div>
-            </div>
 
-        </section>
 
-    </div>
+
+            </section>
+
+
+        </div>
+
+
+
+    </section>
+
 
 
 

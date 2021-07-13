@@ -1,3 +1,60 @@
+/*-----------------------
+       All Fonts
+------------------------- */
+
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/* Open sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+
+/* common style or ulitilies */
+
+body{
+    
+    background-color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+.container {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+    
+
+}
+
+.top-container {
+    width: 870px;
+    height: 679px;
+    background-color: #FFFFFF;
+    padding:40px 30px 30px 30px;
+    border-radius: 5px;
+    
+    
+
+}
+#span-1 {
+    color: blue;
+}
+
+hr{
+    border: 1px solid #D1D1D1;;
+}
+
+h3{
+    font-size: 24px;
+}
+
+
 
 /* nav header */
 
@@ -39,3 +96,279 @@
     font-weight: 700;
 
 }
+
+
+/* top player */
+
+
+.player-container {
+
+    margin-bottom: 30px;
+}
+
+.player-container> h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.top-player {
+
+    
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    
+    
+
+}
+
+.player {
+
+
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+
+    
+  
+    align-items: center;
+
+
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.player>.photo>img {
+    width: 56px;
+    height: 56px;
+}
+
+
+.name {
+    
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+
+    justify-content:flex-start;
+
+    
+    font-size: 20px;
+    
+    
+    
+
+}
+
+
+
+/* top blog */
+
+.article-container {
+    
+
+}
+.blog-container> h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.top-blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    
+
+}
+
+.article {
+
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-photo {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+
+.article>.blog-photo>img {
+    width: 177px;
+    height: 117px;
+
+}
+
+.blog-details {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+
+
+    justify-content: center;
+
+    margin-left:16px;
+
+
+}
+
+
+.blog-details h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+
+.blog-details>p {
+    color: gray;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+
+}
+
+
+/* -----------------------------
+           Course Style
+------------------------------- */
+
+.course-container{
+    width: 870px;
+    height: 362px;
+    background-color:#FFFFFF ;
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 30px;
+
+
+}
+
+.latest-container> h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+
+}
+.courses{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 24px;
+
+
+
+}
+
+.course{
+
+    width:252px ; 
+    height:270px ;
+
+    box-shadow: 0 0 5px 5px wheat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+
+
+}
+
+
+
+.banner img{
+    width: 224px;
+    height: 104px; 
+}
+
+.course-details{
+    width: 224px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title{
+    /* width: 100%;
+    height: auto; */
+}
+.title>h5{
+
+    width: 100%;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    
+}
+.author>p{
+    font-size: 14px;
+    color: #ED6B4F;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.course-info{
+    width: 224px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+/* .rating,.count,.time{
+    margin-right: 5px;
+} */
+
+
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.fa-star{
+    font-size: 12px;
+
+}
+
+.course-info >.Count > p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.time{
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+
+    
+}
+.fa-clock{
+    
+    font-size: 15px;
+    
+}
+
+
